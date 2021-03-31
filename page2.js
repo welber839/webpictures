@@ -27,10 +27,10 @@ function inToAlbum(e){
     for (var i=1;i<6;i++){
         eval('diver'+i+'=document.createElement("div")');
         eval('img'+i+'=document.createElement("img")');
-        eval('img'+i).src="../pictures/album"+j+"/"+i+".JPG";
+        eval('img'+i).src="pictures/album"+j+"/"+i+".JPG";
         
         eval('a'+i+'=document.createElement("a")');
-        eval('a'+i).href="../pictures/album"+j+"/"+i+".JPG";
+        eval('a'+i).href="pictures/album"+j+"/"+i+".JPG";
         eval('a'+i).target="_blank";
         eval('a'+i).appendChild(eval('img'+i));
 
