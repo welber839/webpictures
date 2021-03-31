@@ -1,0 +1,94 @@
+.heading-list {
+    margin:0px auto;
+    width:1263px;
+    margin-bottom:0px;
+    margin-top:30px;
+    display: flex;
+}
+
+.albumHead {
+    min-width: 1%;
+    margin-right:30px;
+}
+
+.heading-list > p {
+    padding-top: 30px;
+    visibility:hidden;
+}
+
+.heading-list > p:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.showThePage {
+    margin:0px auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:50px 50px 0px 50px;
+    min-height: 550px;
+    width:1200px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 185px;
+    gap:50px 10px;
+    background-color: white;
+    box-shadow:0 0 10px black;
+}
+
+.showThePage > div {
+    position: relative;
+    background-color: rgba(175, 172, 172,.2);
+    border-radius: 10px;
+}
+.showThePage > div:hover {
+    cursor: pointer;
+}
+
+.showThePage > div img {  
+    border-radius: 5px;;
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+.showThePage > div .span1 {
+    position:absolute;
+    bottom:0%;
+    left:0%;
+    width:100%;
+    height:60px;
+    background-color: rgba(0,0,0,.8) ;
+    border-radius:0 0 5px 5px ;
+    color:white;
+    text-align: center;
+    line-height: 60px;
+    -webkit-transform:scaleY(0);
+        -ms-transform:scaleY(0);
+            transform:scaleY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+
+/*滑鼠移入時改變狀態*/
+.showThePage > div:hover .span1 {
+    width: 100%;
+    -webkit-transform:scaleY(1);
+        -ms-transform:scaleY(1);
+            transform:scaleY(1);
+}
+
+.showThePage > div .span2 {
+    position:absolute;
+    top:100%;
+    left:0%;
+    width:100%;
+    text-align: left;
+}
